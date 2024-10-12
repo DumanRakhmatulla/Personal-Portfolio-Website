@@ -32,6 +32,8 @@ body {
   padding: 0 15px; /* Optional padding to prevent content from touching the edges */
 }
 
+/* Header */
+
 .header {
   position: fixed;
   top: 0;
@@ -83,6 +85,8 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 10rem;
 }
+
+/* Home */
 
 .home {
   display: flex;
@@ -285,6 +289,8 @@ span {
   }
 }
 
+/* Family */
+
 .family {
   margin-top: 50px;
   display: flex;
@@ -318,7 +324,6 @@ span {
   height: auto;
   box-shadow: 0 0 25px var(--main-color);
   border-radius: 5%;
-  height: auto;
 }
 
 .family-member img:hover {
@@ -332,6 +337,108 @@ span {
 
 .family p {
   margin-top: 50px;
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: 600;
+}
+
+/* Education */
+
+.education {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  text-align: center;
+  gap: 100px;
+}
+
+.education h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Education First */
+
+.education-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education-first img {
+  max-width: 30vw;
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 10%;
+  filter: brightness(90%);
+}
+
+.education-first img:hover {
+  box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 40px;
+  max-width: 700px;
+}
+
+.education-item h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(171, 168, 168);
+}
+
+.education-item h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.education-item p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(171, 168, 168);
+}
+
+/* Education Second */
+
+.education-second {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  /* text-align: end; */
+}
+
+.description {
+  text-align: end;
+}
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 3px solid rgb(34, 34, 34);
+  padding: 8px;
+  text-align: left;
+}
+
+.education-end {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
