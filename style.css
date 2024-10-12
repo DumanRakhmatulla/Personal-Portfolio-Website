@@ -26,6 +26,12 @@ body {
   color: var(--text-color);
 }
 
+.container {
+  max-width: 1440px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 15px; /* Optional padding to prevent content from touching the edges */
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -80,18 +86,18 @@ section {
 
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
 .home-content {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 3rem;
 }
 
@@ -110,8 +116,14 @@ span {
 }
 
 .home-content h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h2 {
+  font-size: 3.5rem;
   margin-top: 1.5rem;
   line-height: 1;
 }
@@ -123,11 +135,13 @@ span {
 .home-img img {
   position: relative;
   top: 3rem;
-  width: 22vw;
+  max-width: 22vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  height: auto;
+  filter: brightness(60%);
 }
 
 .home-img img:hover {
@@ -135,9 +149,10 @@ span {
 }
 
 .home-content p {
+  margin: 1.5rem 0;
   font-size: 1.5rem;
   font-weight: 500;
-  max-width: 1000px;
+  max-width: 750px;
 }
 
 .social-icons a img {
@@ -164,16 +179,23 @@ span {
 
 .btn {
   display: inline-block;
+  text-align: center;
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
+  cursor: pointer;
+  width: 150px;
+  margin: 3rem 0;
+}
+
+.btn button {
+  background-color: transparent;
   font-size: 1.6rem;
   color: white;
   border: 2px solid transparent;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 .btn:hover {
@@ -237,7 +259,7 @@ span {
   }
 }
 
-@keyframes typeing {
+@keyframes typing {
   10%,
   15%,
   30%,
@@ -261,4 +283,55 @@ span {
   85% {
     width: calc(100% + 8px);
   }
+}
+
+.family {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+.family h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.family-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  padding: 5px;
+  row-gap: 40px;
+}
+
+.family-member {
+  flex: 1 1 30%;
+  border: none;
+}
+
+.family-member img {
+  max-width: 22vw;
+  height: auto;
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 5%;
+  height: auto;
+}
+
+.family-member img:hover {
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.family-member h3 {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.family p {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 600;
 }
