@@ -111,10 +111,8 @@ section {
 
 .home-content {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  /* text-align: center; */
   margin-top: 3rem;
 }
 
@@ -445,7 +443,6 @@ span {
 .education-item {
   display: flex;
   flex-direction: column;
-  /* text-align: end; */
 }
 
 .description {
@@ -462,6 +459,10 @@ td {
   border: 3px solid rgb(34, 34, 34);
   padding: 8px;
   text-align: left;
+}
+
+.education-end {
+  /* margin-top: 100px; */
 }
 
 .education-end p {
@@ -572,8 +573,6 @@ td {
   color: white;
 }
 
-/* transform: scale(1.3) translateY(-5px); */
-
 @media (max-width: 1367px) {
   .family-members {
     display: grid;
@@ -630,12 +629,34 @@ td {
     flex-direction: column;
     gap: 30px;
   }
+  .home-content h2 {
+    font-size: 2.5rem;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+  }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home-content p {
+    font-size: 1.5rem;
+  }
+  .family h1 {
+    font-size: 4rem;
+  }
+  .family p {
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+  }
+  .education h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 901px) {
   .family-members {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 0fr));
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     gap: 10px;
     justify-content: center;
   }
@@ -673,12 +694,71 @@ td {
 }
 
 @media (max-width: 769px) {
-  /* .container {
+  .container {
     margin: 0 auto;
     padding: 15px;
-    max-width: 960px;
-  } */
-  /* .family {
+    max-width: 700px;
+  }
+  .family {
+    margin: 0 0 0 50px;
+  }
+  .home-content h2 {
+    font-size: 2rem;
+  }
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+  .home-content h3 {
+    font-size: 2rem;
+  }
+  .home-content p {
+    font-size: 1rem;
+  }
+  .family h1 {
+    font-size: 3.5rem;
+  }
+  .family p {
+    font-size: 1rem;
+    margin-bottom: 100px;
+  }
+  .education h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .container {
+    margin-left: 40%;
+  }
+  .card-text p {
+    display: none;
+  }
+  .hobby-items {
     margin: 0;
-  } */
+  }
+  .family {
+    margin-left: 25%;
+  }
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+  }
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+  .home-content p {
+    font-size: 1rem;
+  }
+  .family h1 {
+    font-size: 3rem;
+  }
+  .family p {
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+  }
+  .education h1 {
+    font-size: 3rem;
+  }
 }
