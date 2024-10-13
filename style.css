@@ -271,7 +271,7 @@ span {
   }
   81%,
   100% {
-    content: "Software Tester";
+    content: "Data Analytic";
   }
 }
 
@@ -461,10 +461,6 @@ td {
   text-align: left;
 }
 
-.education-end {
-  /* margin-top: 100px; */
-}
-
 .education-end p {
   margin-top: 50px;
   font-size: 1.5rem;
@@ -498,7 +494,6 @@ td {
 
 .card {
   width: 300px;
-  /* box-shadow: 0 4px 8px rgba(222, 221, 221, 0.1); */
   box-shadow: 0 4px 8px var(--main-color);
   position: relative;
   overflow: hidden;
