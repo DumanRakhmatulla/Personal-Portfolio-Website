@@ -69,6 +69,19 @@ body {
   border-bottom: 3px solid transparent;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
@@ -139,7 +152,7 @@ span {
 .home-img img {
   position: relative;
   top: 3rem;
-  max-width: 22vw;
+  max-width: 400px;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -298,6 +311,10 @@ span {
   text-align: center;
 }
 
+.family-text2 {
+  display: none;
+}
+
 .family h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -321,10 +338,15 @@ span {
 }
 
 .family-member img {
-  max-width: 22vw;
+  max-width: 400px;
   height: auto;
   box-shadow: 0 0 25px var(--main-color);
   border-radius: 5%;
+}
+
+.family-mem {
+  position: relative;
+  top: -80px;
 }
 
 .family-member img:hover {
@@ -337,7 +359,8 @@ span {
 }
 
 .family p {
-  margin-top: 50px;
+  position: relative;
+  top: 60px;
   font-size: 2.9rem;
   font-weight: 600;
   color: rgb(171, 168, 168);
@@ -374,7 +397,8 @@ span {
 }
 
 .education-first img {
-  max-width: 30vw;
+  max-width: 500px;
+  height: auto;
   box-shadow: 0 0 25px var(--main-color);
   border-radius: 10%;
   filter: brightness(90%);
@@ -532,4 +556,129 @@ td {
 }
 
 .map-image {
+  max-width: 700px;
+  height: auto;
+}
+
+.map-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.map-contact a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* transform: scale(1.3) translateY(-5px); */
+
+@media (max-width: 1367px) {
+  .family-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 10px;
+    align-items: center;
+  }
+  .family-text1 {
+    display: none;
+  }
+  .family-text2 {
+    display: flex;
+  }
+  .education-end p {
+    display: none;
+  }
+}
+
+@media (max-width: 1281px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .btn {
+    display: none;
+  }
+  .education-content {
+    flex-direction: column;
+  }
+  .education-first {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+  .education-item {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .education-second {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .hobby-items {
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .map-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 901px) {
+  .family-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 0fr));
+    gap: 10px;
+    justify-content: center;
+  }
+  .family-mem {
+    top: 0;
+  }
+  .navbar {
+    position: absolute;
+    right: 0;
+    height: auto;
+    top: 105px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 150px;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    gap: 20px;
+  }
+
+  .navbar a {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .navbar.nav-active {
+    transform: translateX(0%);
+    max-width: 150px;
+    background-color: #232323;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 769px) {
+  /* .container {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 960px;
+  } */
+  /* .family {
+    margin: 0;
+  } */
 }

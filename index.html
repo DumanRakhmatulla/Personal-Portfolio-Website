@@ -23,6 +23,11 @@
         <a href="#hobbies">Hobbies</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </header>
     <section class="home container" id="home">
       <div class="home-content">
@@ -35,17 +40,19 @@
           about learning new technologies and creating web applications.
         </p>
         <div class="social-icons">
-          <a href="#">
+          <a
+            href="https://www.facebook.com/share/wdy12HPZUFakZGxN/?mibextid=qi2Omg"
+          >
             <img src="assets/icons/facebook.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/rakhmatulla_duman">
             <img src="assets/icons/instagram.png" alt="" />
           </a>
-          <a href="#">
-            <img src="assets/icons/linkedin.png" alt="" />
+          <a href="https://leetcode.com/u/Rakhmatulladuman">
+            <img src="assets/icons/leetcode.png" alt="" />
           </a>
-          <a href="#">
-            <img src="assets/icons/twitter.png" alt="" />
+          <a href="https://github.com/DumanRakhmatulla">
+            <img src="assets/icons/github.png" alt="" />
           </a>
         </div>
         <div class="btn">
@@ -65,10 +72,10 @@
             <h3>This is my Dad and Mom</h3>
           </div>
 
-          <div class="family-member">
+          <div class="family-member family-mem">
             <img src="assets/images/littleBS.jpg" alt="" />
             <h3>This is my junior brathers and sisters</h3>
-            <p>
+            <p class="family-text1">
               This is my family. I am the eldest of the House. I have a Father,
               Mother, me, 4 little brothers and 2 little sisters in my family.
             </p>
@@ -91,6 +98,10 @@
             <h3>This is my Mom, junior brather and sister</h3>
           </div>
         </div>
+        <p class="family-text2">
+          This is my family. I am the eldest of the House. I have a Father,
+          Mother, me, 4 little brothers and 2 little sisters in my family.
+        </p>
       </div>
     </section>
     <section class="education container" id="education">
@@ -251,25 +262,51 @@
         <div class="map-item">
           <img src="assets/images/map.png" alt="" class="map-image" />
           <div class="map-contact">
-            <p>+7 (776) 353 7764</p>
-            <p>rakhmatulladuman0505@gmail.com</p>
+            <p>
+              <a
+                href="https://wa.me/87763537764?text=Сәлеметсіз бе!
+              "
+                >+7 (776) 353 7764</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=rakhmatulladuman0505@gmail.com
+
+              "
+                >rakhmatulladuman0505@gmail.com</a
+              >
+            </p>
             <div class="social-icons">
-              <a href="#">
+              <a
+                href="https://www.facebook.com/share/wdy12HPZUFakZGxN/?mibextid=qi2Omg"
+              >
                 <img src="assets/icons/facebook.png" alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/rakhmatulla_duman">
                 <img src="assets/icons/instagram.png" alt="" />
               </a>
-              <a href="#">
-                <img src="assets/icons/linkedin.png" alt="" />
+              <a href="https://leetcode.com/u/Rakhmatulladuman/">
+                <img src="assets/icons/leetcode.png" alt="" />
               </a>
-              <a href="#">
-                <img src="assets/icons/twitter.png" alt="" />
+              <a href="https://github.com/DumanRakhmatulla">
+                <img src="assets/icons/github.png" alt="" />
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      const burger = document.querySelector(".burger");
+      const navLinks = document.querySelector(".navbar");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("nav-active");
+
+        // Burger Animation
+        burger.classList.toggle("toggle");
+      });
+    </script>
   </body>
 </html>
