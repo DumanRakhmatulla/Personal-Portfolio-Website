@@ -464,7 +464,7 @@ td {
 }
 
 .hobby-items {
-  margin: 0 110px;
+  margin: 0 110px 0 110px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -508,4 +508,28 @@ td {
   font-size: 1.2rem;
   font-weight: 400;
   color: rgb(171, 168, 168);
+}
+
+/* Contact */
+
+.map-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+}
+
+.map-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.map-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map-image {
 }
